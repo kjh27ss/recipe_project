@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TopNav from './componets/TopNav'
+import Slide from './componets/Slide'
+import Delivery from './componets/Delivery'
+import Weeks from './componets/Weeks'
+import Recipe from './componets/Recipe'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopNav />
+      <Slide />
+      <Delivery />
+      <Weeks />
+      <Recipe />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
