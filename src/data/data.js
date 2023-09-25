@@ -262,3 +262,79 @@ export const recipeData = [
         category:"중식"
     }
 ];
+
+
+export const category = [
+    {
+        id:1,
+        name:'버거',
+        img:"image/foods/001.png"
+
+    },
+    {
+        id:2,
+        name:'닭꼬치',
+        img:"image/foods/002.png"
+
+    },
+    {
+        id:3,
+        name:'쌀밥',
+        img:"image/foods/003.png"
+
+    },
+    {
+        id:4,
+        name:'만두',
+        img:"image/foods/004.png"
+
+    },
+    {
+        id:5,
+        name:'피자',
+        img:"image/foods/005.png"
+
+    },
+    {
+        id:6,
+        name:'고기',
+        img:"image/foods/006.png"
+
+    },
+    {
+        id:7,
+        name:'브런치',
+        img:"image/foods/007.png"
+
+    },
+    {
+        id:8,
+        name:'아이스크림',
+        img:"image/foods/008.png"
+
+    },
+    {
+        id:9,
+        name:'전골',
+        img:"image/foods/009.png"
+
+    },
+    {
+        id:10,
+        name:'스테이크',
+        img:"image/foods/0010.png"
+
+    },
+    {
+        id:11,
+        name:'샐러드',
+        img:"image/foods/0011.png"
+
+    },
+    {
+        id:12,
+        name:'감자튀김',
+        img:"image/foods/0012.png"
+
+    }
+];

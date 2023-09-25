@@ -4,6 +4,8 @@ import Slide from './componets/Slide'
 import Delivery from './componets/Delivery'
 import Weeks from './componets/Weeks'
 import Recipe from './componets/Recipe'
+import Category from './componets/Category'
+import Footer from './componets/Footer'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Delivery />
       <Weeks />
       <Recipe />
+      <Category />
+      <Footer />
     </div>
   )
 }
