@@ -23,7 +23,6 @@ const Weeks = () => {
                         }}
                     >
                     { weeksRecipe.map((item) => {
-                        /* const price = item.price.toLocaleString(); */
                         return(
                             <WeekCard key={item.id} img={item.img} id={item.id} title={item.title}/>
                         )

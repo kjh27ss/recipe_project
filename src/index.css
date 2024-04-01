@@ -7,3 +7,53 @@
       @apply border border-black rounded-xl px-5 py-1
    }
 }
+
+.splide__arrow--prev{
+   left: -50px !important;
+   top: 190px !important;
+}
+
+.splide__arrow--next{
+   right: -50px !important;
+   top: 190px !important;
+}
+
+.splide__arow svg{
+   width: 5em !important;
+   height: 5em !important;
+}
+
+/* 로그인 아이디 저장 */
+input#check_btn{
+   display:none;
+   }
+ 
+ input#check_btn + label{
+   cursor:pointer;
+  }
+ 
+ input#check_btn + label > span{
+   vertical-align: middle;
+   padding-left: 5px;
+  }
+ 
+ /* 체크하기 전 상태 */
+ input#check_btn + label:before{
+   content:"";
+   display:inline-block;
+   width:17px;
+   height:17px;
+   border:2px solid #F47C7C;
+   border-radius: 4px;
+   vertical-align:middle;
+   }
+   
+ /* 체크 된 상태  */ 
+ input#check_btn:checked + label:before{
+   content:"";
+   background-color:#F47C7C;
+   border-color:#F47C7C;
+   /* background-image: url('image/ic_check.png'); */
+   background-repeat: no-repeat;
+   background-position: 50%;
+   }

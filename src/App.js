@@ -1,23 +1,22 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Main from './componets/Main'
+import Login from './componets/Login'
 import TopNav from './componets/TopNav'
-import Slide from './componets/Slide'
-import Delivery from './componets/Delivery'
-import Weeks from './componets/Weeks'
-import Recipe from './componets/Recipe'
-import Category from './componets/Category'
 import Footer from './componets/Footer'
 
 const App = () => {
   return (
-    <div className="App">
-      <TopNav />
-      <Slide />
-      <Delivery />
-      <Weeks />
-      <Recipe />
-      <Category />
-      <Footer />
-    </div>
+    <BrowserRouter>
+        <div className='flex flex-col justify-between h-screen'>
+          <TopNav />
+          <Routes>
+            <Route path='/' element={<Main/>} />
+            <Route path='/login' element={<Login />} />
+          </Routes>
+          <Footer/>
+        </div>
+    </BrowserRouter>
   )
 }
 

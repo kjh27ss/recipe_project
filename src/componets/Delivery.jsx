@@ -2,16 +2,14 @@ import React from 'react'
 
 const Delivery = () => {
   return (
-    <div className='w-full bg-white py-16 px-4'>
-        <h3 className='text-stone-500 text-2xl text-center'>
+    <div className='w-full bg-white py-24'>
+        <h3 className='text-black text-opacity-50 text-2xl text-center py-5'>
             배달앱을 다운 받으시면 <span className='font-bold ms-3'>배달이 무료!</span>
         </h3>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
-            <img src='image/delivery.png' className='w-[500px] mx-auto my-4'/>
-                   
+            <img src='image/delivery.png' className='w-[500px] mx-auto my-4'/>                   
             <div className='flex flex-col justify-center'>
-                <p className='text-[#00df9a] font-bold'>GET A APP</p>
-            
+                <p className='text-amber-500 text-opacity-50 font-bold'>GET A APP</p>            
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>
                     매일 다른 레시피 요리 제공
                 </h1>
@@ -21,10 +19,10 @@ const Delivery = () => {
                     레시피 컨텐츠의 수는 더욱 다양해지고 있습니다.                 
                 </p>
                 <p className='py-2'>
-                    타오르고 넣는 뭇 아름다우냐? 타오르고 피가 가슴에 그들에게 공자는 바이며, 눈이 인생의 부패뿐이다.
-                    타오르고 넣는 뭇 아름다우냐? 타오르고 피가 가슴에 그들에게 공자는 바이며, 눈이 인생의 부패뿐이다.
+                    15분만에 뚝딱 만드는 집밥 부터, 30분만에 만드는 특별한 메뉴까지 소스를 따로 만들지 않아도,칼질을 못해도, 계량을 하지 않아도 
+                    요리에 딱 맞춘 쿡킷의 레시피만 따라 하면 어느새 근사한 요리가 완성됩니다.
                 </p>
-                <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Got Download</button>
+                <button className='bg-amber-900 text-white w-[200px] rounded-md border-none font-medium my-6 mx-auto md:mx-0 py-3'>Got Download</button>
             </div>
         </div>
     </div>
