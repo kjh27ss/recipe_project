@@ -3,6 +3,7 @@ import { Splide } from '@splidejs/react-splide';
 import "@splidejs/react-splide/css";
 import { weeksRecipe } from '../data/data';
 import WeekCard from '../card/WeekCard';
+import { Link } from 'react-router-dom';
 
 const Weeks = () => {
   return (
@@ -22,9 +23,11 @@ const Weeks = () => {
                             arrow:false
                         }}
                     >
-                    { weeksRecipe.map((item) => {
+                    { weeksRecipe.map((item, index) => {
                         return(
-                            <WeekCard key={item.id} img={item.img} id={item.id} title={item.title}/>
+                            <Link to={"/detail/" + index}>
+                                <WeekCard key={item.id} img={item.img} id={item.id} title={item.title}/>
+                            </Link>
                         )
                     })}
                     </Splide>

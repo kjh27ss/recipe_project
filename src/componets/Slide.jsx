@@ -5,9 +5,9 @@ import { RxDotFilled } from 'react-icons/rx';
 
 const Slide = () => {
     const sliders = [
-        {url:'./image/banner01.png'},
-        {url:'./image/banner02.png'},
-        {url:'./image/food3.jpg'}
+        {url:'./image/banner/banner01.png'},
+        {url:'./image/banner/banner02.png'},
+        {url:'./image/banner/banner03.png'}
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     const prevSlider = () => {
