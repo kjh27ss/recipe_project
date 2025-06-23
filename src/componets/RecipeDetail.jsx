@@ -2,16 +2,15 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { CiShare2 } from "react-icons/ci";
 
-const Detail = (props) => {
-  console.log(props);
+const RecipeDetail = (props) => {
   const {id} = useParams();
-  const product = props.weeks[id];
+  const product = props.recipe[id];
 
   // 이미지 경로 설정
   const image = product.img;
   const url = '../';
   const imgurl = url + image;
-
+  
   return (
     <div className='max-w-[1540px] mx-auto'>
         <img src={imgurl} alt={product.title} className='w-full h-[600px] object-cover border'/>
@@ -39,4 +38,4 @@ const Detail = (props) => {
   )
 }
 
-export default Detail
+export default RecipeDetail

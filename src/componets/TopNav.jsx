@@ -11,14 +11,13 @@ const TopNav = () => {
     const [sideNav, setSideNav] = useState(false);
 
     return (
-        // <div className="max-w-[1520px] mx-auto flex items-center p-4">
         <div className="max-w-[1540px] flex justify-between p-4 mx-auto">
             <div className="flex items-center w-[800px]">
                 <div onClick={()=>setSideNav(!sideNav)} className="cursor-pointer pr-4">
                     <AiOutlineMenu size={25} />
                 </div>
                 <Link to={"/"}>
-                    <h1 className="text-2xl sm:text-3xl lg:text-3xl px-2 uppercase tracking-tighter">logo</h1>     
+                    <h1 className="text-2xl sm:text-3xl lg:text-3xl px-2 uppercase tracking-tighter">Cookple</h1>     
                 </Link>
                 <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 mx-3 text-[14px]">
                     <p className="bg-amber-900 text-white rounded-full text-bold">

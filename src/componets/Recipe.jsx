@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
 import { recipeData } from '../data/data';
 import RecipeCard from '../card/RecipeCard';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Recipe = () => {
   const [foods,setFoods] = useState(recipeData);
-  const [clicked, setClicked] = useState(false);
 
   const category = (cat) => {
     setFoods(
@@ -14,18 +13,6 @@ const Recipe = () => {
         })
     )
   }
-  // click시 색상 변경
-  // const activeStyle = {
-  //   color: "#fff", 
-  //   background :"#6392ff",
-  //   border:"none"
-  // };
-
-  // const originStyle = {
-  //   color:"#333",
-  //   background:"fff"
-  //   border
-  // }
   
   return (
     <>
@@ -36,15 +23,14 @@ const Recipe = () => {
           </div>
             {/* category */}
             <ul className='flex flex-col lg:flex-row justify-center p-5 mt-9 mb-3 
-            '>              
+            '>          
                 <li className='m-1 p-3 border border-amber-900 text-black
-                 hover:bg-amber-700 hover:text-white hover:border-orange-700 
-                 group bg-yellow-500 focus:bg-yellow-600 '
-                    onClick={()=>setFoods(recipeData)}>전체보기 </li>
-                                  
+                 hover:bg-amber-700 hover:text-white hover:border-orange-700'
+                 onClick={()=>setFoods(recipeData)}>
+                      전체보기
+                </li>    
                  <li className='m-1 p-3 border border-amber-900 text-black
-                 hover:bg-amber-700 hover:text-white hover:border-orange-700
-                 group bg-yellow-500 focus:bg-yellow-600'
+                 hover:bg-amber-700 hover:text-white hover:border-orange-700'
                    onClick={()=>category("한식")}>
                     한식
                  </li>
@@ -65,8 +51,10 @@ const Recipe = () => {
                  </li>
             </ul> {/* category */}
             <div className='grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-6 py-4'>
-                {foods.map((item)=>(
+                {foods.map((item, index)=>(
+                  <Link to={'/recipedetail/' + index}>
                     <RecipeCard key={item.id} title={item.title} img={item.img} time={item.time} price={item.price.toLocaleString()}/>                    
+                  </Link>
                 ))}                
             </div>
         </div>

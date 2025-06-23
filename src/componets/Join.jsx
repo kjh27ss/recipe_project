@@ -2,7 +2,6 @@ import React from 'react'
 import { FaFacebookF } from "react-icons/fa";
 import { ImBubble } from "react-icons/im";
 import { SiNaver } from "react-icons/si";
-import { Link } from 'react-router-dom';
 
 const Join = () => {
   return (

@@ -14,7 +14,9 @@ const Weeks = () => {
                     <h1 className='text-black-500 font-bold text-3xl tracking-widest text-center py-5 uppercase'>one week recipes</h1>
                     <p className='text-gray-500 text-xl text-center pb-7'>한 주 동안 사랑받은 레시피를 확인해 보세요.</p>
                 </div>
-                <div className='lg:flex-max-w-[1520px] m-auto py-2 px-2'>
+                <div className='flex max-w-[1520px] m-auto'>
+                {/*<div className='lg:flex-max-w-[1520px] m-auto py-2 px-2'>
+                    
                     <Splide
                         options={{
                             perPage: 4,
@@ -22,15 +24,17 @@ const Weeks = () => {
                             grag:"free",
                             arrow:false
                         }}
-                    >
+                    >*/}
+               
                     { weeksRecipe.map((item, index) => {
                         return(
-                            <Link to={"/detail/" + index}>
+                           <Link to={"/detail/" + index} className='mr-3 last:m-0'>
                                 <WeekCard key={item.id} img={item.img} id={item.id} title={item.title}/>
                             </Link>
                         )
+                        
                     })}
-                    </Splide>
+                    {/*</Splide>*/}
                 </div>
             </div>
         </div>
