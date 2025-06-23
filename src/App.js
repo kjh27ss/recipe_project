@@ -1,6 +1,5 @@
 import React from 'react'
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { HashRouter as Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Main from './componets/Main'
 import Login from './componets/Login'
 import TopNav from './componets/TopNav'
@@ -13,7 +12,7 @@ import RecipeDetail from './componets/RecipeDetail'
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
         <div className='flex flex-col justify-between h-screen'>
           <TopNav />
           <Routes>
@@ -25,7 +24,7 @@ const App = () => {
           </Routes>
           <Footer/>
         </div>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
