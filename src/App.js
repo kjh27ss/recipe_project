@@ -12,7 +12,7 @@ import RecipeDetail from './componets/RecipeDetail'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className='flex flex-col justify-between h-screen'>
           <TopNav />
           <Routes>
